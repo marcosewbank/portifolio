@@ -1,8 +1,11 @@
 import React from "react";
+import { useTheme } from "next-themes";
+
 import {
   MouseParallaxContainer,
   MouseParallaxChild,
 } from "react-parallax-mouse";
+
 import {
   DiReact,
   DiTerminalBadge,
@@ -15,13 +18,11 @@ import {
   DiCss3,
   DiCode,
 } from "react-icons/di";
+
 import { SiTypescript } from "react-icons/si";
-import { useTheme } from "next-themes";
 
 export const Parallax = () => {
   const { theme } = useTheme();
-
-  console.log("🚀 ~ file: Parallax.tsx ~ line 23 ~ Parallax ~ theme", theme);
 
   return (
     <>
