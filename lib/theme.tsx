@@ -32,7 +32,7 @@ const components = {
 }
 
 const fonts = {
-  heading: "'Roboto'",
+  heading: "'Nunito', serif",
 }
 
 const colors = {

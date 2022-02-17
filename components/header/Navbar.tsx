@@ -12,10 +12,10 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
-  background,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
+import ThemeToggleButton from './ThemeToggleButton'
 import Logo from './Logo'
 
 const LinkItem = ({ href, path, children }) => {
@@ -54,11 +54,14 @@ export const Navbar = (props) => {
         alignItems="center"
         justifyContent="space-between"
       >
+        <ThemeToggleButton />
+
         <Flex alignItems="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing="tighter">
             <Logo />
           </Heading>
         </Flex>
+
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -74,6 +77,7 @@ export const Navbar = (props) => {
             Posts
           </LinkItem>
         </Stack>
+
         <Box flex={1} alignItems="right">
           <Box
             ml={2}
@@ -89,13 +93,13 @@ export const Navbar = (props) => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}></MenuItem>
+                  <MenuItem as={Link}>Home</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}></MenuItem>
+                  <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}></MenuItem>
+                  <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
                 <MenuItem as={Link} href="https://github.com/marcosewbank">
                   View Source
