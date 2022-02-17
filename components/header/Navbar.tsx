@@ -54,8 +54,6 @@ export const Navbar = (props) => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <ThemeToggleButton />
-
         <Flex alignItems="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing="tighter">
             <Logo />
@@ -84,12 +82,14 @@ export const Navbar = (props) => {
             display={{ base: 'flex', md: 'none' }}
             justifyContent="end"
           >
+            <ThemeToggleButton />
             <Menu>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                ml={2}
               />
               <MenuList>
                 <NextLink href="/" passHref>

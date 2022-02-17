@@ -5,7 +5,7 @@ import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => {
   return (
-    <Box w="100%" alignItems="center">
+    <Box w="100%" display="flex" justifyContent="center" alignItems="center">
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
@@ -24,9 +24,15 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
 }
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" alignItems="center">
+  <Box w="100%">
     <NextLink href={`/works/${id}`}>
-      <LinkBox cursor="pointer">
+      <LinkBox
+        cursor="pointer"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Image
           src={thumbnail}
           alt={title}
@@ -34,7 +40,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           placeholder="blur"
         />
         <LinkOverlay href={`/works/${id}`} target="_blank">
-          <Text mt={2} fontSize={20}>
+          <Text mt={2} fontSize={24}>
             {title}
           </Text>
         </LinkOverlay>
