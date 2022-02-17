@@ -33,7 +33,7 @@ const Page = () => {
 
         <Box
           display="flex"
-          flexDirection={{ base: 'column-reverse', md: 'row' }}
+          flexDirection={{ base: 'column', md: 'row' }}
           justifyContent={{ base: 'center', md: 'space-evenly' }}
           alignItems="center"
         >

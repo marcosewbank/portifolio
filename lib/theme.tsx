@@ -40,9 +40,9 @@ const colors = {
 }
 
 const config = {
-  initialColorMode: 'dark',
-  useSystemColorMode: true,
+  initialColorMode: 'light',
 }
 
 const theme = extendTheme({ config, styles, components, fonts, colors })
+
 export default theme

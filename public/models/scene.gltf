@@ -4,16 +4,8 @@
       "bufferView": 2,
       "componentType": 5126,
       "count": 1064,
-      "max": [
-        90.000190734863281,
-        29.206417083740234,
-        132.76190185546875
-      ],
-      "min": [
-        -90.000198364257812,
-        -29.206417083740234,
-        -1.3005974324187264e-06
-      ],
+      "max": [90.000190734863281, 29.206417083740234, 132.76190185546875],
+      "min": [-90.000198364257812, -29.206417083740234, -1.3005974324187264e-6],
       "type": "VEC3"
     },
     {
@@ -21,42 +13,24 @@
       "byteOffset": 12768,
       "componentType": 5126,
       "count": 1064,
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
+      "max": [1, 1, 1],
+      "min": [-1, -1, -1],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
       "count": 1064,
-      "max": [
-        1,
-        1
-      ],
-      "min": [
-        0,
-        -5.9604644775390625e-08
-      ],
+      "max": [1, 1],
+      "min": [0, -5.9604644775390625e-8],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
       "count": 3624,
-      "max": [
-        1063
-      ],
-      "min": [
-        0
-      ],
+      "max": [1063],
+      "min": [0],
       "type": "SCALAR"
     }
   ],
@@ -103,7 +77,7 @@
   ],
   "images": [
     {
-      "uri": "textures/material_0_baseColor.png"
+      "uri": "/material_0_baseColor.png"
     }
   ],
   "materials": [
@@ -111,12 +85,7 @@
       "doubleSided": true,
       "name": "material_0",
       "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
+        "baseColorFactor": [1, 1, 1, 1],
         "baseColorTexture": {
           "index": 0,
           "texCoord": 0
@@ -144,45 +113,20 @@
   ],
   "nodes": [
     {
-      "children": [
-        1
-      ],
+      "children": [1],
       "name": "RootNode (gltf orientation matrix)",
-      "rotation": [
-        -0.70710678118654746,
-        -0,
-        -0,
-        0.70710678118654757
-      ]
+      "rotation": [-0.70710678118654746, -0, -0, 0.70710678118654757]
     },
     {
-      "children": [
-        2
-      ],
+      "children": [2],
       "matrix": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1.6081226229577292e-16,
-        0,
-        0,
-        -1.6081226229577292e-16,
-        1,
-        0,
-        0,
-        1.0674885183702826e-14,
-        0,
-        1
+        1, 0, 0, 0, 0, 1, 1.6081226229577292e-16, 0, 0, -1.6081226229577292e-16,
+        1, 0, 0, 1.0674885183702826e-14, 0, 1
       ],
       "name": "RootNode (model correction matrix)"
     },
     {
-      "children": [
-        3
-      ],
+      "children": [3],
       "name": "Geode"
     },
     {
@@ -202,9 +146,7 @@
   "scenes": [
     {
       "name": "OSG_Scene",
-      "nodes": [
-        0
-      ]
+      "nodes": [0]
     }
   ],
   "textures": [
@@ -214,4 +156,3 @@
     }
   ]
 }
-
